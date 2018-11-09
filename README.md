@@ -31,6 +31,13 @@ For example, let's say we want to capitalize all of the letters of "art vandlay"
 "art vandelay" # "ART VANDELAY"
 ```
 
+
+
+
+    'art vandelay'
+
+
+
 > **Reminder:** *to **run** the code in a jupyter notebook, press shift + enter after selecting the cell you would like to run.*
 
 > **Note:** In future labs, Learn will check our code to ensure that we did it correctly.  But for our first lab, this works fine.
@@ -42,39 +49,74 @@ To get our output to match the comment we will change it to the following:
 "art vandelay".upper() # 'ART VANDELAY'
 ```
 
+
+
+
+    'ART VANDELAY'
+
+
+
 ### Get going with strings
 
 Our first problem will be to capitalize the first letter of each word in `"art vandelay"`. Find the correct string method to capitlize both names.
 
 
 ```python
-art_vandelay = "art vandelay" # 'Art Vandelay'
+art_vandelay = "art vandelay".title() # 'Art Vandelay'
 art_vandelay
 ```
+
+
+
+
+    'Art Vandelay'
+
+
 
 Now let's uppercase all of the letters of "Ceo".
 
 
 ```python
-ceo = "Ceo" # 'CEO'
+ceo = "Ceo".upper() # 'CEO'
 ceo
 ```
+
+
+
+
+    'CEO'
+
+
 
 Next we will need our code to answer a question about our email addresses. Every email address should end with ".com". Find the right string method to check if the email address ends with `".com"` and return `True` or `False` accordingly. 
 
 
 ```python
-ends_with_com = "art.vandelay@vandelay.co" # False
+ends_with_com = "art.vandelay@vandelay.co".endswith('.com') # False
 ends_with_com
 ```
+
+
+
+
+    False
+
+
 
 As you can see below, the website `"vandelay.com"` is not preceded by `"www."`. We can perform what is called string concatenation to fix this! Use the plus sign, `'+'`, to change the website `'vandelay.com'` to the string `'www.vandelay.com'` by prepending `'www.'`.
 
 
 ```python
-web_address = 'vandelay.com' # 'www.vandelay.com'
+web_address = 'www.' + 'vandelay.com' # 'www.vandelay.com'
 web_address
 ```
+
+
+
+
+    'www.vandelay.com'
+
+
 
 ### Working with numbers
 
@@ -82,15 +124,29 @@ Finally, Mr. Vandelay gave us his phone number, but he actually has two other ph
 
 
 ```python
-phone_num_one = "7285553334" # 7285553335
+phone_num_one = int("7285553334") + 1 # 7285553335
 phone_num_one 
 ```
 
 
+
+
+    7285553335
+
+
+
+
 ```python
-phone_num_two = "7285553334" # 7285553336
+phone_num_two = int("7285553334") + 2 # 7285553336
 phone_num_two
 ```
+
+
+
+
+    7285553336
+
+
 
 ### Summary
 
